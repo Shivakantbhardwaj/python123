@@ -1,0 +1,16 @@
+F=10
+h=10
+r=5
+t=int(input("enter  the  time"))
+vtank=3.14*r*r*h
+vwtr=F*t
+if  vwtr>vtank:
+    print("over flow")
+    print("volume of ",vwtr-vtank)
+elif vwtr == vtank:
+    print("tank full")
+else:
+    print("underflow condition")
+    ht = vwtr/(3.14*r**2)
+    hr = h- ht
+    print("filled height {}\n Remaining height {}".format(ht, hr))
